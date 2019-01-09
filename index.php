@@ -135,7 +135,7 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
-  padding:10px;
+  padding:16px;
 }
 
 /* The Modal (background) */
@@ -143,10 +143,10 @@ button:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  left: 100px;
-  top: 50px;
-  width: 500px /* Full width */
-  height: 500px /* Full height */
+  left: 5%;
+  top: 5%;
+  width:80% /* Full width */
+  height:80% /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color:white;
   opacity:4;
