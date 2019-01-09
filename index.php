@@ -86,12 +86,12 @@ img {vertical-align: middle;}
 
 /*Style for signup*/
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+/* body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;} */
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width:50%;
+  width:500px;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -113,7 +113,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width:100%;
   opacity: 0.9;
 }
 
@@ -124,41 +124,42 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color:red;
+  background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn,{
-  float: left;
+.cancelbtn, .signupbtn {
+  
   width: 50%;
 }
 
 /* Add padding to container elements */
 .container {
-  padding:16px;
+  padding: 16px;
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display:none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
-  left: 5%;
-  top: 5%;
-  width:80% /* Full width */
-  height:80% /* Full height */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color:white;
-  opacity:4;
-  padding-top:0px;
+  opacity:.5;
+  padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color:white;
+  background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 100%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
+  opacity:8;
 }
 
 /* Style the horizontal ruler */
@@ -174,7 +175,7 @@ hr {
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color:black;
+  color:red;
 }
 
 .close:hover,
@@ -195,6 +196,7 @@ hr {
   .cancelbtn, .signupbtn {
      width: 100%;
   }
+}
 }
 
 </style>
@@ -263,13 +265,13 @@ hr {
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label><br>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
 
       <label for="psw"><b>Password</b></label><br>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
 
       <label for="psw-repeat"><b>Repeat Password</b></label><br>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
