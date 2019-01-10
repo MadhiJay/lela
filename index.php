@@ -37,7 +37,7 @@
         <li><a href="#">List Your Rooms</a></li>
     </ul>
       </li>
-      <li><a href="#">Locations around Ella</a></li>
+      <li><a href="location.html">Locations around Ella</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-user" ></span>Sign Up</a></li>
