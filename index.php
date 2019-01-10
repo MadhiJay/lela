@@ -11,195 +11,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="styles/home-page.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Style for slideshow */
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width:2000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 30s;
-  animation-name: fade;
-  animation-duration: 30s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 9} 
-  to {opacity: 10}
-}
-
-@keyframes fade {
-  from {opacity: 9} 
-  to {opacity: 10}
-}
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-/*Style for signup*/
-
-/* body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;} */
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width:500px;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width:100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display:none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color:white;
-  opacity:.5;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  opacity:8;
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
- 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color:red;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
-  }
-}
-}
-
-</style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -231,23 +45,28 @@ hr {
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/img_nature_wide.jpg" style="width:100%">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/hike.jpg" style="width:100%">
   <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div class="numbertext">2 / 4</div>
+  <img src="images/hike2.jpg" style="width:100%">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="numbertext">3 / 4</div>
+  <img src="images/waterfall.jpg" style="width:100%">
+  <div class="text"></div>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/train2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 </div>
 <br>
 
@@ -255,12 +74,14 @@ hr {
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+ 
   <form class="modal-content" action="/action_page.php">
     <div class="container">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
@@ -291,7 +112,8 @@ hr {
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides() 
+{
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -305,10 +127,10 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 30000); // Change image every 30 seconds
+  setTimeout(showSlides, 3000); // Change image every 30 seconds
 }
-
-// Get the modal
+function signupModal(){
+  // Get the modal
 var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
@@ -317,6 +139,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+}
+
 </script>
 
 
