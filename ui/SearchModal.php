@@ -3,7 +3,7 @@
     <form class="modal-content animate" action="/action_page.php">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <h1 align="center" style="padding:10px;">Search</h1>       
+        <h1 align="center" style="padding:10px;">Pick your Destination</h1>       
       </div>
   <br>
       <div class="container">
