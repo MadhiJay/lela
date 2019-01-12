@@ -23,7 +23,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/3 ) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -113,8 +113,8 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  
+.cancelbtn, .signupbtn ,.searchbtn{
+  align-items: center;
   width: 50%;
 }
 
@@ -149,6 +149,7 @@ button:hover {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  margin-right: 600px;
 }
  
 /* The Close Button (x) */
@@ -227,7 +228,8 @@ font-family: arial, verdana, tahoma;
 
 
 .accordian {
-width:100%; height: 320px;
+width:100%; 
+height: 320px;
 overflow: hidden;
 
 /*Time for some styling*/
@@ -287,4 +289,10 @@ color: #fff;
 text-decoration: none;
 padding: 20px;
 font-size: 16px;
+}
+/* select option */
+select {
+  padding: 10px;
+  width:30%;
+  height:40px;
 }
