@@ -6,7 +6,7 @@
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="images/logo.png" alt="Card image cap" width=200px heigth=200px>
                 <div class="card-body">
-                  <p class="card-text">This Hotel in Ella has been Booked 456times</p>
+                  <p class="text-light bg-dark">This Hotel in Ella has been Booked 456times</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group-right">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
