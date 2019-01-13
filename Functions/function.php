@@ -1,9 +1,10 @@
 <?php 
+require_once('Connection/connection.php');
 function login(){
-    if(isset($_POST['email']) && isset($_POST['pword']) ){
-        $email =$_POST['email'];
-        $password = $_POST['pword'];
-        $pass_hashed = make_password_hashed($password);
+    if(isset($_POST['login-email']) && isset($_POST['psw']) ){
+        $email =$_POST['login-email'];
+        $password = $_POST['psw'];
+        $pass_hashed = hashingPassword($password);
         $db = new DB();
         $conn = $db->connect();
         if(check_remember_me_pressed($db,$conn,$email)){
@@ -16,8 +17,8 @@ function login(){
                 $_SESSION['current_user_email']=$email;
                 require 'ui/home.php';
             }else{
-                $_POST['alert-message']='Invalid Credentials.';
-                require 'ui/login.php';
+                $_POST['alert-message-login']='Invalid Credentials.';
+                require 'ui/home.php';
             }
         }
         if($_POST['remember']=='true'){
@@ -27,7 +28,7 @@ function login(){
         }  
         $db->disconnect($conn);
     }else{
-       require 'ui/login.php';
+       require 'ui/home.php';
     }  
     
 }
@@ -61,24 +62,32 @@ function check_remember_me_pressed($db,$conn,$email){
         return false;
     }
 }
-function make_password_hashed($pass){
+function hashingPassword($pass){
     return md5(sha1($pass));
 }
 function register(){
-    if(!check_password_equility($_POST['pword'],$_POST['repword'])){
-        $_POST['alert-message']='Passwords are not the same.please retype the passwords';
-        require 'views/signup.php';
+    $email =$_POST['email'];
+    $pass =hashingPassword($_POST['pword']);
+    $uname = $_POST['username'];
+    $db = new DB();
+    $conn = $db->connect();
+    if(!check_email_already_exists($db,$conn,$email)){
+        $db->addUser($conn,$uname,$email,$pass);
+        require_once('ui/home.php');
     }else{
-        $db = new DB();
-        $password_hashed=make_password_hashed($_POST['pword']);
-        $conn = $db->connect();
-        if(check_email_already_exists($db,$conn,$_POST['email'])){
-            $_POST['alert-message']='That email already exixts please try another.';
-            require 'ui/signup.php';
-        }else{
-            $db->addUser($conn,$_POST['firstName'],$_POST['lastName'],$_POST['username'],$_POST['email'],$password_hashed,$_POST['dob'],$_POST['gender']);
-        }
-        $db->disconnect($conn);
+        $_POST['alert-message'] = "That user already exists.";
+        require_once('ui/home.php');
     }
+    
+    
+    $db->disconnect($conn);
 }
+function check_email_already_exists($db,$conn,$email){
+    
+    if($db->getOnlyOneColumnFromTable($conn,'email',$email,'email','user')==null){
+        return false;
+    }else{
+        return true;
+    }
+ }
 ?>

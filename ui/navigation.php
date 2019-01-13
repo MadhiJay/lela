@@ -14,20 +14,27 @@
             
             <li class="divider"></li>
             <li class="dropdown-header">Rooms only</li>
-            <li><a href="#">List Your Rooms</a></li>
+            <li><a href="RoomHost/design.php">List Your Rooms</a></li>
         </ul>
         </li>
         <li><a href="location.html">Locations around Ella</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
-            <span class="glyphicon glyphicon-user" ></span>Sign Up
+        <?php 
+        if(isset($_SESSION['loggedin'])){
+            echo "";
+        }else{
+            echo " <li><a href=\"#\" onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">
+            <span class=\"glyphicon glyphicon-user\" ></span>Sign Up
             </a>
         </li>
-        <li><a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
-                <span class="glyphicon glyphicon-log-in"></span> Login
+        <li><a href=\"#\" onclick=\"document.getElementById('id02').style.display='block'\" style=\"width:auto;\">
+                <span class=\"glyphicon glyphicon-log-in\"></span> Login
             </a>
         </li>
-        </ul>
+        </ul>";
+        }
+       
+        ?>
   </div>
 </nav>

@@ -2,7 +2,7 @@
 define('SERVER','localhost:3306');
 define('USER','user');
 define('PASSWORD','123');
-define('DATABASE','ingagedb');
+define('DATABASE','lela');
 class DB{
 	function connect(){
 		$conn = mysqli_connect(SERVER, USER, PASSWORD,DATABASE);
@@ -14,14 +14,14 @@ class DB{
 	function disconnect($conn){
 		mysqli_close($conn);
 	}
-	function addUser($conn,$fname,$lname,$uname,$email,$password,$dob,$gender){
+	function addUser($conn,$uname,$email,$password){
 		
-		$sql="call NewUser('".$username."','".$email."')";
+		$sql="call NewUser('".$uname."','".$email."','".$password."')";
 		if (mysqli_query($conn, $sql)) {
 			$_POST['success-message']='You are registered successfully. Please Sign in with your credentials';
 			require 'ui/login.php';
 		} else {
-			echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			$_POST['alert-message'] = "error ".mysqli_error($conn);
 		}
 	}
 	function getOnlyOneColumnFromTable($conn,$where,$equal,$column,$table){

@@ -1,11 +1,21 @@
 <div id="id01" class="modal">
     
-      <form class="modal-content" action="/action_page.php">
+      <form class="modal-content" action="" method="POST">
         <div class="container">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
+          
+          <?php
+            if(isset($_POST['alert-message'])){
+              echo  "<script>document.getElementById('id01').style.display='block';</script><div class=\"alert alert-danger\" style=\"width:50%;\">
+              <strong>Warning! ".$_POST['alert-message']."&nbsp;</strong>
+            </div><hr>";
+            }else if(isset($_POST['success-message'])){
+              echo  "<script>document.getElementById('id01').style.display='block';</script><div class=\"alert alert-success\" style=\"width:50%;\"><strong>Success! ".$_POST['success-message']."&nbsp;</strong> </div>";
+            }?>
+            
           <label for="uname"><b>Username</b></label><br>
           <input type="text" placeholder="Enter Username" name="username" required><br>
 
