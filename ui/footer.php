@@ -13,7 +13,23 @@
 						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Reviews</a></li>
 					</ul>
 				</div>
+				<form action="">
+					<table>
+						<tr>
+							<td><label for="name">Name :</label></td>
+							<td><input type="text"placeholder="Enter name" name="name"><br></td>
+						</tr>
+						<tr>
+							<td><label for="review">Comments :</label></td>
+							<td><textarea name="comments" rows="5">
+								Enter your Comments............
+							</textarea></td>
+						</tr>
+					</table>
+				
+			</form>
 			</div>
+			
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">

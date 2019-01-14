@@ -14,7 +14,7 @@ if ($request_uri[0]=='/design') {
         logout();
     }else{
         if(isset($_POST['username'])){
-            register();
+            signup();
         }else{
             login();
         }

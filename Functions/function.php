@@ -11,12 +11,12 @@ function login(){
         $pass_hashed = hashingPassword($password);
         $db = new DB();
         $conn = $db->connect();
-        if(check_remember_me_pressed($db,$conn,$email)){
+        if(rememberMeCheck($db,$conn,$email)){
             $_SESSION['loggedin'] = true;
             $_SESSION['current_user_email']=$email;
             
         }else{
-            if(check_credentials_true($db,$conn,$pass_hashed,$email)){
+            if(CheckLoginDetails($db,$conn,$pass_hashed,$email)){
                 $_SESSION['loggedin'] = true;
                 $_SESSION['current_user_email']=$email;
                 require 'ui/home.php';
@@ -41,7 +41,7 @@ function getUserName($email){
     return $user['username'];
 }
 
-function check_credentials_true($db,$conn,$password,$email){
+function CheckLoginDetails($db,$conn,$password,$email){
     $password_saved_in_db=$db->getOnlyOneColumnFromTable($conn,'email',$email,'pword','user');
     if($password_saved_in_db['pword']==$password){
         return true;
@@ -49,7 +49,7 @@ function check_credentials_true($db,$conn,$password,$email){
         return false;
     }
 }
-function check_remember_me_pressed($db,$conn,$email){
+function rememberMeCheck($db,$conn,$email){
     $user=$db->getOnlyOneColumnFromTable($conn,'email',$email,'logged_in','user');
     if($user['logged_in']=="true"){
         return true;
@@ -60,13 +60,13 @@ function check_remember_me_pressed($db,$conn,$email){
 function hashingPassword($pass){
     return md5(sha1($pass));
 }
-function register(){
+function signup(){
     $email =$_POST['email'];
     $pass =hashingPassword($_POST['pword']);
     $uname = $_POST['username'];
     $db = new DB();
     $conn = $db->connect();
-    if(!check_email_already_exists($db,$conn,$email)){
+    if(!checkEmail($db,$conn,$email)){
         $db->addUser($conn,$uname,$email,$pass);
         require_once('ui/home.php');
     }else{
@@ -77,7 +77,7 @@ function register(){
     
     $db->disconnect($conn);
 }
-function check_email_already_exists($db,$conn,$email){
+function checkEmail($db,$conn,$email){
     
     if($db->getOnlyOneColumnFromTable($conn,'email',$email,'email','user')==null){
         return false;
