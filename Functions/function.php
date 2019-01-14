@@ -1,6 +1,10 @@
 <?php 
 require_once('Connection/connection.php');
 function login(){
+    $email =$_POST['login-email'];
+    if($_POST['remember']=='true'){
+        setcookie('logged-user', $email, time() + (86400 * 30), "/");
+    }
     if(isset($_POST['login-email']) && isset($_POST['psw']) ){
         $email =$_POST['login-email'];
         $password = $_POST['psw'];
@@ -16,39 +20,30 @@ function login(){
                 $_SESSION['loggedin'] = true;
                 $_SESSION['current_user_email']=$email;
                 require 'ui/home.php';
+               
             }else{
                 $_POST['alert-message-login']='Invalid Credentials.';
                 require 'ui/home.php';
             }
         }
-        if($_POST['remember']=='true'){
-            //update db user with logged in
-        }else{
-            
-        }  
+        
         $db->disconnect($conn);
     }else{
        require 'ui/home.php';
     }  
     
 }
-function go_to_home(){
-    
-}
-function get_user_full_name($email){
+function getUserName($email){
     $db = new DB();
     $conn = $db->connect();
-    $user = $db->getOnlyOneColumnFromTable($conn,'email',$email,'fName,lName','user');
+    $user = $db->getOnlyOneColumnFromTable($conn,'email',$email,'username','user');
     $db->disconnect($conn);
-    $name ='';
-    foreach ($user as $key => $value) {
-        $name .= $value." ";
-    }
-    return $name;
+    return $user['username'];
 }
+
 function check_credentials_true($db,$conn,$password,$email){
-    $password_saved_in_db=$db->getOnlyOneColumnFromTable($conn,'email',$email,'password','user');
-    if($password_saved_in_db['password']==$password){
+    $password_saved_in_db=$db->getOnlyOneColumnFromTable($conn,'email',$email,'pword','user');
+    if($password_saved_in_db['pword']==$password){
         return true;
     }else{
         return false;
@@ -89,5 +84,12 @@ function check_email_already_exists($db,$conn,$email){
     }else{
         return true;
     }
+ }
+ function logout(){
+    $_SESSION['loggedin'] = false;
+    $_SESSION['current_user_email']=null;
+    unset($_COOKIE['logged-user']);
+    setcookie('logged-user','',time()-3600);
+    require 'ui/home.php';
  }
 ?>

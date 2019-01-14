@@ -2,11 +2,29 @@
 <html>
 <head>
 	<title>Our Services</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+
+  <link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/home-page.css">
+  <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.png">
 	<style>
 
 	
 .main{
-			background-image:url("img2.jpg"); 
+			background-image:url("../images/img2.jpg"); 
 			/*min-height: 100%;*/
 			background-position:cover;
 			background-repeat: no-repeat;
@@ -79,12 +97,18 @@
 		filter:alpha(opacity = 20);
 	}
 	</style>
+	
 </head>
 <body>
+<?php 
+  require_once('ui/navigation.php');
+  ?>
+
 
 
 
 <div class="main">
+	
 <form method="POST" action="connection.php" class="container">
 	
 	<table >
