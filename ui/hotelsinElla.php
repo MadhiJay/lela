@@ -21,7 +21,11 @@ This property also has one of the best-rated locations in Ella! Guests are happi
 Couples particularly like the location — they rated it 9.8 for a two-person trip.
 We speak your language! </p>
                           </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <div id="map1" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1624.815066373315!2d81.06148306569958!3d6.871188669547212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465cf837486e1%3A0x9747f839c73cda26!2s98+Acres+Resort+%26+Spa!5e0!3m2!1sen!2slk!4v1547538490329" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                     
                   </div>
@@ -44,7 +48,11 @@ Ella Spice Garden is 11 km from the accommodation, while Ella Rock is 14 km away
 
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map2">Map</button>
+                      <div id="map2" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2950182536165!2d81.0774133139406!3d6.855198621122187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4660bc01d6817%3A0x21efa2933c3ec575!2sVilla+Verde+Ella!5e0!3m2!1sen!2slk!4v1547539902046" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                    
                   </div>
@@ -71,7 +79,8 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 8.9 for a two-person trip.
 We speak your language!</p>
                         </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map3">Map</button>
+                      
                     </div>
                     
                   </div>
@@ -98,7 +107,7 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 9.0 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                    
                   </div>
@@ -127,7 +136,7 @@ This guest house is also rated for the best value in Ella! Guests are getting mo
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                    
                   </div>
@@ -153,7 +162,7 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 9.0 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                     
                   </div>
@@ -180,7 +189,7 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 8.5 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                     
                   </div>
@@ -206,7 +215,7 @@ Couples particularly like the location — they rated it 8.2 for a two-person 
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                    
                   </div>
@@ -232,7 +241,7 @@ This hotel is also rated for the best value in Ella! Guests are getting more for
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
                     </div>
                   </div>
                 </div>

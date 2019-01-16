@@ -32,7 +32,7 @@
         <ul class="nav navbar-nav navbar-right">
         <?php 
         if(isset($_SESSION['current_user_email'])){
-            echo " <li><a href=\"#\"  style=\"width:auto;\"> Welcome &nbsp;".getUserName($_SESSION['current_user_email'])."!</a>
+            echo " <li><a href=\"ui/profile.php\"  style=\"width:auto;\"> Welcome &nbsp;".getUserName($_SESSION['current_user_email'])."!</a>
             
         </li>
         <li><a href=\"../index.php?logout=yes\"  style=\"width:auto;\">
