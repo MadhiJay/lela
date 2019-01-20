@@ -20,10 +20,13 @@ if (!$conn) {
 // sql to delete a record
 $sql = "DELETE FROM rent WHERE email=".$_GET['email'];
 
-if (mysqli_query($conn, $sql)== true) {
-    echo "Record deleted successfully";
-} else {
-    echo "Error deleting record: " . mysqli_error($conn);
+if (mysqli_query($conn, $sql)== true) {?>
+    <script>alert("Record deleted successfully")
+	</script>
+	<a href="test.php">Back</a><?php
+} else {?>
+    <script>alert("Error deleting record: "<?php. mysqli_error($conn?>)</script>
+	<a href="test.php">Back</a><?php
 }
 
 mysqli_close($conn);
