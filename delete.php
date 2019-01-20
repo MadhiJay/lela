@@ -31,3 +31,5 @@ if (mysqli_query($conn, $sql)== true) {?>
 
 mysqli_close($conn);
 ?>
+</body>
+</html>
