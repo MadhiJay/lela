@@ -28,3 +28,16 @@ create table homeRent(
 
 
 );
+create table roomRent(
+	email varchar(100) primary key,
+	category varchar(100),
+	place varchar(100),
+	noOfRooms int,
+	price varchar(5),
+	descrpt varchar(500),
+	contact varchar(100),
+	img varchar(200),
+	foreign key(email) references user(email)
+
+
+);
