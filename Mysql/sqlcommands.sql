@@ -15,7 +15,7 @@ CREATE PROCEDURE NewUser(IN username VARCHAR(100),IN email VARCHAR(100),IN pword
  END //
 DELIMITER ;
 
-create table homeRent(
+create table Rent(
 	email varchar(100) primary key,
 	category varchar(100),
 	place varchar(100),
@@ -25,19 +25,4 @@ create table homeRent(
 	contact varchar(100),
 	img varchar(200),
 	foreign key(email) references user(email)
-
-
-);
-create table roomRent(
-	email varchar(100) primary key,
-	category varchar(100),
-	place varchar(100),
-	noOfRooms int,
-	price varchar(5),
-	descrpt varchar(500),
-	contact varchar(100),
-	img varchar(200),
-	foreign key(email) references user(email)
-
-
-);
+	);
