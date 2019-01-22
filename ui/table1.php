@@ -53,28 +53,28 @@
 		
 	<div id="slideshow">
 		
-		<div><img src="images/loc/1.jpg"></div>
-		<div><img src="images/loc/2.jpg"></div>
-		<div><img src="images/loc/3.jpg"></div>
-		<div><img src="images/loc/4.jpg"></div>
-		<div><img src="images/loc/5.jpg"></div>
-		<div><img src="images/loc/6.jpg"></div>
-		<div><img src="images/loc/7.jpg"></div>
-		<div><img src="images/loc/8.jpg"></div>
-		<div><img src="images/loc/9.jpg"></div>
-		<div><img src="images/loc/10.jpg"></div>
-		<div><img src="images/loc/11.jpg"></div>
-		<div><img src="images/loc/12.jpg"></div>
-		<div><img src="images/loc/13.jpg"></div>
-		<div><img src="images/loc/14.jpg"></div>
-		<div><img src="images/loc/15.jpg"></div>
-		<div><img src="images/loc/16.jpg"></div>
-		<div><img src="images/loc/17.jpg"></div>
-		<div><img src="images/loc/18.jpg"></div>
-		<div><img src="images/loc/19.jpg"></div>
-		<div><img src="images/loc/20.jpg"></div>
-		<div><img src="images/loc/21.jpg"></div>
-		<div><img src="images/loc/22.jpg"></div>
+		<div><img src="../images/loc/1.jpg"></div>
+		<div><img src="../images/loc/2.jpg"></div>
+		<div><img src="../images/loc/3.jpg"></div>
+		<div><img src="../images/loc/4.jpg"></div>
+		<div><img src="../images/loc/5.jpg"></div>
+		<div><img src="../images/loc/6.jpg"></div>
+		<div><img src="../images/loc/7.jpg"></div>
+		<div><img src="../images/loc/8.jpg"></div>
+		<div><img src="../images/loc/9.jpg"></div>
+		<div><img src="../images/loc/10.jpg"></div>
+		<div><img src="../images/loc/11.jpg"></div>
+		<div><img src="../images/loc/12.jpg"></div>
+		<div><img src="../images/loc/13.jpg"></div>
+		<div><img src="../images/loc/14.jpg"></div>
+		<div><img src="../images/loc/15.jpg"></div>
+		<div><img src="../images/loc/16.jpg"></div>
+		<div><img src="../images/loc/17.jpg"></div>
+		<div><img src="../images/loc/18.jpg"></div>
+		<div><img src="../images/loc/19.jpg"></div>
+		<div><img src="../images/loc/20.jpg"></div>
+		<div><img src="../images/loc/21.jpg"></div>
+		<div><img src="../images/loc/22.jpg"></div>
 		
 	</div><br><br><br>
 	
