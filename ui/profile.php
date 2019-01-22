@@ -23,14 +23,23 @@
 
 </head>
 <body style="background-color:black">
-<?php 
+<!-- <?php 
     require_once('../ui/navigation.php');
-?>
+?> -->
 <div style="background-color:#fff" class="container">
     <p align="center" color="balck" style="font-size:30px;">Welcome to Lela Accomadation</p>
         
-        <img src="../images/img_avatar.png" alt="" width="300px" height="300px">
-        
+        <img src="../images/img_avatar.png" class="img-circle" alt="Cinque Terre" width="300px" height="300px">
+        <button type="button" class="btn btn-primary">View</button>
+        <button type="button" class="btn btn-success">Update</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+        <div class="dropdown">
+        <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Add New
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">List your Place</a></li>
+      <li><a href="#">List your rooms</a></li>
+    </ul></div>
 </div>
     
 </body>
