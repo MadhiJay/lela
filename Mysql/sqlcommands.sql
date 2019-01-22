@@ -15,6 +15,7 @@ CREATE PROCEDURE NewUser(IN username VARCHAR(100),IN email VARCHAR(100),IN pword
  END //
 DELIMITER ;
 
+<<<<<<< HEAD
 create table hotelsInElla(
 	desId varchar(10),
 	mapId varchar(10) primary key,
@@ -52,3 +53,17 @@ insert into hotelsInElla values
 insert into hotelsInElla values
 ("demo9","map9","images/HotelsinElla/CHILL VILLE, VIEW POINT HOTEL.jpg","CHILL VILLE, VIEW POINT HOTEL","Located 800 m from Demodara Nine Arch Bridge in Ella, CHILL VILLE, VIEW POINT HOTEL features free WiFi access and free private parking. The resort has an outdoor pool and sun terrace, and guests can enjoy a meal at the restaurant or a drink at the bar.Some rooms include a seating area to relax in after a busy day. Enjoy a cup of tea while looking out at the mountain or garden. The rooms are equipped with a private bathroom equipped with a shower. Extras include free toiletries and a hairdryer.You will find luggage storage space at the hotel.Little Adam's Peak is 1 km from CHILL VILLE, VIEW POINT HOTEL, while Ella Rock is 1.7 km away.Couples particularly like the location — they rated it 9.0 for a two-person trip.This hotel is also rated for the best value in Ella! Guests are getting more for their money when compared to other properties in this city.We speak your language!","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1722382173957!2d81.07729611394068!3d6.869954720946619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465c8f47ec55f%3A0xaf5b999318ddc55c!2sCHILL+VILLE%2C+VIEW+POINT+HOTEL!5e0!3m2!1sen!2slk!4v1547540856063");
 
+=======
+create table Rent(
+	id int not null AUTO_INCREMENT,
+	email varchar(100),
+	category varchar(100),
+	place varchar(100),
+	noOfRooms int,
+	price varchar(5),
+	descrpt varchar(500),
+	contact varchar(100),
+	img varchar(200),
+	primary key(id),
+	foreign key(email) references user(email));
+>>>>>>> 3113c521effa8a49a651c31adb8e9e640df02473
