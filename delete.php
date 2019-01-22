@@ -18,7 +18,7 @@ if (!$conn) {
 }
 
 // sql to delete a record
-$sql = "DELETE FROM rent WHERE email=".$_GET['email'];
+$sql = "DELETE FROM rent WHERE id=".$_GET['id'];
 
 if (mysqli_query($conn, $sql)== true) {?>
     <script>alert("Record deleted successfully")
