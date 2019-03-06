@@ -30,5 +30,15 @@ class DB{
 		$row =mysqli_fetch_assoc($result);
 		return $row;
 	}
+	function set_data($conn,$sql){
+		if(mysqli_query($conn, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	function get_data($conn,$sql){
+		return mysqli_query($conn, $sql);
+	}
 }    
 ?>

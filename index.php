@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('Functions/function.php');
+require_once('Connection/connection.php');
 if(isset($_COOKIE['logged-user'])){
     if(!isset($_SESSION['current_user_email'])){
         $_SESSION['current_user_email']=$_COOKIE['logged-user'];

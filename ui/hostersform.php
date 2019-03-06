@@ -197,7 +197,7 @@ button:hover {
 </style>
 
 <body>
-<form id="Form" action="POST" >
+<form id="Form" action="" method="POST" >
 
 
 <div class="tab">

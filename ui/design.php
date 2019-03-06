@@ -109,7 +109,7 @@
 
 <div class="main">
 	
-<form method="POST" action="connection.php" class="container">
+<form method="POST" action="" class="container">
 	
 	<table >
 
@@ -118,7 +118,7 @@
 		</tr> 
 		<tr>
 		<th class="points" rowspan="1">Type :</th>
-		<td><select >
+		<td><select name="type">
 			<optgroup label="Single">
 				<option value="Ac">Ac</option>
 				<option value="NonAc">Non-Ac</option>
@@ -136,7 +136,7 @@
 		
 		<tr>
 			<th class="points">Location :</th>
-			<td><select >
+			<td><select name="location">
 			<option>Diyathalawa</option>
 			<option>Bandaravela</option>
 			<option>Badulla</option>
@@ -151,15 +151,21 @@
 		</tr>
 		<tr>
 			<th class="points">Discription </th>
-			<td><textarea id="Discription"  ></textarea><br></td>
+			<td><textarea name="desc"  ></textarea><br></td>
 		</tr>
 		<tr>
 			
-			<td  align="center"><b><input type="Submit" value="Submit"></b></td>
+			<td  align="center"><b><input name="design-post" type="Submit" value="Submit"></b></td>
 		</tr>
 		
 	</table>
 	
+	<?php 
+		if(isset($_POST['design-post'])){
+			add_rooms();
+			
+		}
+	?>
 </form>
 </div>
 </body>

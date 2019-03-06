@@ -3,14 +3,14 @@
   <div class="container-fluid">
         <div class="navbar-header">   
         <img src="images/logo.png" width="50" height="50" alt="">
-        <a class="navbar-brand" href="index.php">LELA</a>
+        <a class="navbar-brand" href="../index.php">LELA</a>
         </div>
         <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Become a host<span class="caret"></span></a>
             <ul class="dropdown-menu">
             <li class="dropdown-header">HOMES</li>
-            <li><a href="#"> List Your Place </a></li>
+            <li><a href="ui/hostersform.php"> List Your Place </a></li>
 
             <li class="divider"></li>
             <li class="dropdown-header">Rooms only</li>

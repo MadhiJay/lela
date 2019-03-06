@@ -1,5 +1,5 @@
 <?php 
-require_once('Connection/connection.php');
+
 function login(){
     $email =$_POST['login-email'];
     if($_POST['remember']=='true'){
@@ -91,5 +91,34 @@ function checkEmail($db,$conn,$email){
     unset($_COOKIE['logged-user']);
     setcookie('logged-user','',time()-3600);
     require 'ui/home.php';
+ }
+ function add_rooms(){
+     $sql= "insert into Rent (email,category,place,noOfRooms,price,descrpt) values('".$_SESSION['current_user_email']."','".$_POST['type']."','".$_POST['location']."',1,'".$_POST['prc']."','".$_POST['desc']."')";
+     $db= new DB();
+     $db->set_data($db->connect(),$sql);
+ }
+ function view_rooms(){
+     $sql ="select * from rent where email='".$_SESSION['current_user_email']."'";
+     $db= new DB();
+     $rooms=$db->get_data($db->connect(),$sql);
+     while($room=mysqli_fetch_assoc($rooms)){
+        echo "<tr><td>".$room['category']."</td><td>".$room['place']."</td><td>".$room['noOfRooms']."</td><td>".$room['price']."</td><td>".$room['descrpt']."</td><td>
+        <a href='/ui/profile.php?deleteid=".$room['id']."' type='button' class='btn btn-danger'>Delete</a></td></tr>";
+     }
+ }
+ function delete_room(){
+     $sql = "delete from rent where id=".$_GET['deleteid'];
+     $db= new DB();
+     $db->set_data($db->connect(),$sql);
+     echo '<meta http-equiv="refresh" content="0;URL=profile.php">';
+ }
+ function search_rooms(){
+    $sql ="select * from rent where place like '%".$_GET['location']."%'";
+    $db= new DB();
+    $rooms=$db->get_data($db->connect(),$sql);
+    while($room=mysqli_fetch_assoc($rooms)){
+       echo "<tr><td>".$room['email']."</td><td>".$room['category']."</td><td>".$room['place']."</td><td>".$room['noOfRooms']."</td><td>".$room['price']."</td><td>".$room['descrpt']."</td><td>
+       <a href='' type='button' class='btn btn-success'>Book</a></td></tr>";
+    }
  }
 ?>

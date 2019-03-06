@@ -1,7 +1,3 @@
-<?php session_start();
-require_once('Functions/function.php');
-require_once('Connection/connection.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,19 +14,6 @@ require_once('Connection/connection.php'); ?>
 <?php 
   require_once('ui/navigation.php');
   ?>
-  <div class="container">
-  <table cellspacing="10" border="1">
-<tr><th>Email</th><th>Category</th><th>place</th><th>no pf rooms</th><th>Price</th><th>description</th><th>order</th></tr>
-  <?php 
-  if(isset($_GET['location'])){
-    search_rooms();
-  }
-    
-
-  ?>
-  </table>
-  </div>
- 
   
 </body>
 </html>

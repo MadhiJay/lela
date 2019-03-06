@@ -80,7 +80,10 @@ Couples particularly like the location — they rated it 8.9 for a two-person 
 We speak your language!</p>
                         </div>
                       <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map3">Map</button>
-                      
+                      <div id="map3" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.8702951507878!2d81.05145667755967!3d6.87348815066867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465b611713153%3A0x491656753d8d8199!2sElla+Heritage!5e0!3m2!1sen!2slk!4v1547540564114" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                     
                   </div>
@@ -107,7 +110,11 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 9.0 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map4">Map</button>
+                      <div id="map4" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1722082310725!2d81.03874631394066!3d6.869958320946584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465af92b82441%3A0xb9b4b1da66b44e4d!2sSerenite+Ella!5e0!3m2!1sen!2slk!4v1547540622767" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                    
                   </div>
@@ -136,7 +143,11 @@ This guest house is also rated for the best value in Ella! Guests are getting mo
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map5">Map</button>
+                      <div id="map5" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1602624354064!2d81.04313831394069!3d6.871392320929495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465b225d4478f%3A0xb07ab72d5f7f162f!2sLaura!5e0!3m2!1sen!2slk!4v1547540668087" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                    
                   </div>
@@ -162,7 +173,11 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 9.0 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map6">Map</button>
+                      <div id="map6" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.158667808877!2d81.04340841394068!3d6.871583720927251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465b1087a153b%3A0x7dbc22d0dbe68ffd!2sThe+View!5e0!3m2!1sen!2slk!4v1547540720685" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                     
                   </div>
@@ -189,7 +204,11 @@ This is our guests' favourite part of Ella, according to independent reviews.
 Couples particularly like the location — they rated it 8.5 for a two-person trip.
 We speak your language!</p>
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map7">Map</button>
+                      <div id="map7" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.166618007555!2d81.0455387139406!3d6.870629420938612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465ba192ab2f5%3A0xdeb9e7e9fa13dac9!2sCountry+House!5e0!3m2!1sen!2slk!4v1547540774167" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                     
                   </div>
@@ -215,7 +234,11 @@ Couples particularly like the location — they rated it 8.2 for a two-person 
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map8">Map</button>
+                      <div id="map8" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.8702951507878!2d81.05145667755967!3d6.87348815066867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465b611713153%3A0x491656753d8d8199!2sElla+Heritage!5e0!3m2!1sen!2slk!4v1547540564114" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                    
                   </div>
@@ -241,7 +264,11 @@ This hotel is also rated for the best value in Ella! Guests are getting more for
 We speak your language!</p>
 
                       </div>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map1">Map</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#map9">Map</button>
+                      <div id="map9" class="collapse out">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.109585198164!2d81.0478927139407!3d6.877472420857072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae46534ee3facc5%3A0x25e70a4a597a6934!2sRowinrich+Cottages%2C+Ella!5e0!3m2!1sen!2slk!4v1547540823679" 
+                      width="358" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
                     </div>
                   </div>
                 </div>
