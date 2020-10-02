@@ -21,7 +21,7 @@ if (!$conn) {
 $sql = "DELETE FROM rent WHERE id=".$_GET['id'];
 
 if (mysqli_query($conn, $sql)== true) {?>
-    <script>alert("Record deleted successfully")
+    <script>alert("Your Record Deleted Successfully")
 	</script>
 	<a href="test.php">Back</a><?php
 } else {?>
