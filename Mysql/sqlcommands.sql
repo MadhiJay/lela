@@ -17,7 +17,7 @@ DELIMITER ;
 
 <<<<<<< HEAD
 create table hotelsInElla(
-	desId varchar(10),
+	desId varchar(100),
 	mapId varchar(10) primary key,
 	imageSrc text ,
 	hotelName text,
